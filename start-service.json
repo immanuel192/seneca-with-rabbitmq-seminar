@@ -1,0 +1,22 @@
+{
+	apps: [
+		{
+			name: "client",
+			script: "client.js",
+			watch: false,
+			env: {
+				"NODE_ENV": "development"
+			},
+			instances: 1
+		},
+		{
+			name: "server",
+			script: "server.js",
+			watch: false,
+			env: {
+				"NODE_ENV": "development"
+			},
+			instances: 2
+		}
+	]
+}
